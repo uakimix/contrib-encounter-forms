@@ -763,8 +763,8 @@ START
 		elsif (!$bigtable) #probably an html tag or something -- Get to this point if no Field_name and Field_type found in array.
 		{
 
-			  if ($_->[0] !~ /<br />\s*$|<\/td>\s*$|<\/tr>\s*$|<\/p>\s*$/) {
-			    $return .= '<br />'."\n";
+                          if ($_->[0] !~ /<br \/>\s*$|<\/td>\s*$|<\/tr>\s*$|<\/p>\s*$/) {			    
+                              $return .= '<br />'."\n";
 			  }
 
 			  $return .= $_->[0]."\n";
