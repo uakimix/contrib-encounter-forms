@@ -129,6 +129,7 @@ use OpenEMR\Core\Header;
 formHeader("Form: FORM_NAME");
 ?>
 <html><head>
+<link rel="stylesheet" type="text/css" href="<?php echo $rootdir; ?>/forms/FORM_NAME/FORM_NAME.css" />
 <?php Header::setupHeader('datetime-picker'); ?>
 </head>
 <body <?php echo $top_bg_line;?> topmargin=0 rightmargin=0 leftmargin=2 bottommargin=0 marginwidth=2 marginheight=0>
@@ -159,6 +160,7 @@ use OpenEMR\Core\Header;
 formHeader("Form: FORM_NAME");
 ?>
 <html><head>
+<link rel="stylesheet" type="text/css" href="<?php echo $rootdir; ?>/forms/FORM_NAME/FORM_NAME.css" />
 <?php Header::setupHeader('datetime-picker'); ?>
 </head>
 <body <?php echo $top_bg_line;?> topmargin=0 rightmargin=0 leftmargin=2 bottommargin=0 marginwidth=2 marginheight=0>
@@ -347,6 +349,7 @@ function chkdata_Radio(&$obj, $nam, $var) {
 ?>
 <html><head>
 <?php Header::setupHeader('datetime-picker'); ?>
+<link rel="stylesheet" type="text/css" href="<?php echo $rootdir; ?>/forms/FORM_NAME/FORM_NAME.css" />
 </head>
 <body <?php echo $top_bg_line;?> topmargin=0 rightmargin=0 leftmargin=2 bottommargin=0 marginwidth=2 marginheight=0>
 DATE_HEADER
