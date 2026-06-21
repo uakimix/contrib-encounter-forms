@@ -329,19 +329,19 @@ formHeader("Form: FORM_NAME");
 $obj = formFetch("form_FORM_NAME", $_GET["id"]);  //#Use the formFetch function from api.inc.php to get values for existing form.
 
 function chkdata_Txt(&$obj, $var) {
-        return attr($obj{"$var"});
+        return attr($obj["$var"]);
 }
 function chkdata_Date(&$obj, $var) {
-        return attr($obj{"$var"});
+        return attr($obj["$var"]);
 }
 function chkdata_CB(&$obj, $nam, $var) {
-	if (preg_match("/Negative.*$var/",$obj{$nam})) {return;} else {return "checked";}
+	if (preg_match("/Negative.*$var/",$obj[$nam])) {return;} else {return "checked";}
 }
 function chkdata_Radio(&$obj, $nam, $var) {
-	if (strpos($obj{$nam},$var) !== false) {return "checked";}
+	if (strpos($obj[$nam],$var) !== false) {return "checked";}
 }
  function chkdata_PopOrScroll(&$obj, $nam, $var) {
-	if (preg_match("/Negative.*$var/",$obj{$nam})) {return;} else {return "selected";}
+	if (preg_match("/Negative.*$var/",$obj[$nam])) {return;} else {return "selected";}
 }
 
 ?>
